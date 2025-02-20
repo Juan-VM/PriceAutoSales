@@ -21,8 +21,6 @@
 
     databaseHelper database = new databaseHelper();
 
-
-    
     if (database.saveCar(new Car(selBrand,
             selModel,
             selYear,

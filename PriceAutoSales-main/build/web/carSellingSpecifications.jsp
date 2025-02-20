@@ -86,7 +86,7 @@
 
                         <div class="mb-3">
                             <select name="selModel" class="form-select" aria-label="Select your model" required>
-                                <option <option value="" selected disabled>Select your model</option>
+                                <option value="" selected disabled>Select your model</option>
 
                                 <%
                                     String selBrand = request.getParameter("selBrand");
@@ -147,7 +147,7 @@
                             <input type="number" class="form-control" name="txtMileage" required>
                         </div>  
 
-                        <input type="hidden" name="selBrand" value="<%= selBrand%>">
+                        <input type="hidden" name="selBrand" value="<%= selBrand%>"> <!-- Envia en la respuesta la brand elegida en el jsp anterior, para poder crear el carro -->
                         <button type="submit" class="btn btn-primary">Save</button>
 
                     </form>
